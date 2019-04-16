@@ -4,6 +4,9 @@ project(glib C)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD 11)
 
+if(MSVC)
+    add_compile_options(/utf-8)
+endif()
 set(GLIB_DLL_SUFFIX 2)
 set(GLIB_LIB_SUFFIX 2.0)
 
